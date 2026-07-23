@@ -1,0 +1,6 @@
+config,threshold,n_policies,precision,recall,f1,total_tp,total_fp,total_fn
+semantic,0.0,15,0.615,0.263,0.368,56,35,157
+semantic,0.1,15,0.615,0.263,0.368,56,35,157
+semantic,0.2,15,0.629,0.263,0.371,56,33,157
+semantic,0.3,15,0.618,0.258,0.364,55,34,158
+semantic,0.4,14,0.625,0.296,0.402,55,33,131

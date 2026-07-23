@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy Audit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #14161A;
+      --bg-raised: #1B1E24;
+      --line: #2A2E36;
+      --text: #E8E6E1;
+      --text-dim: #8B909C;
+      --accent: #C98A3E;
+      --accent-dim: #6B4E28;
+      --danger: #C15B4A;
+      --severity-high: #E05252;
+      --severity-high-bg: rgba(224, 82, 82, 0.12);
+      --severity-med: #E0A652;
+      --severity-med-bg: rgba(224, 166, 82, 0.12);
+      --severity-low: #6FA875;
+      --severity-low-bg: rgba(111, 168, 117, 0.12);
+      --mono: 'JetBrains Mono', monospace;
+      --sans: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+    }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 8px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+
+    header p {
+      color: var(--text-dim);
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 60ch;
+    }
+
+    .panel {
+      background: var(--bg-raised);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+      font-family: var(--mono);
+    }
+
+    input,
+    select {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-family: var(--mono);
+      font-size: 14px;
+      min-width: 180px;
+    }
+
+    input:focus,
+    select:focus,
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+
+    button {
+      background: var(--accent);
+      color: #1A1200;
+      border: none;
+      padding: 11px 20px;
+      border-radius: 6px;
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #DA9A4E;
+    }
+
+    button:disabled {
+      background: var(--accent-dim);
+      color: var(--text-dim);
+      cursor: not-allowed;
+    }
+
+    button.secondary {
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--text);
+    }
+
+    button.secondary:hover {
+      border-color: var(--accent);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      font-family: var(--mono);
+      font-size: 13px;
+      padding: 8px 14px;
+      color: var(--text-dim);
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+
+    .tab.active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .status {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--text-dim);
+      margin: 12px 0;
+      min-height: 18px;
+    }
+
+    .status.error {
+      color: var(--danger);
+    }
+
+    .metrics {
+      display: flex;
+      gap: 24px;
+      margin: 20px 0;
+    }
+
+    .metric {
+      flex: 1;
+    }
+
+    .metric .num {
+      font-family: var(--mono);
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .metric .label {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+
+    .finding {
+      position: relative;
+      border-left: 2px solid var(--accent);
+      padding: 14px 16px 14px 18px;
+      margin-bottom: 10px;
+      background: var(--bg-raised);
+      border-radius: 0 6px 6px 0;
+    }
+
+    .finding.not-performed {
+      border-left-color: var(--line);
+      opacity: 0.6;
+    }
+
+    .finding-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    .practice-name {
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .party-tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      border: 1px solid var(--accent-dim);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .explanation {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.5;
+      margin: 0 0 8px;
+    }
+
+    .evidence {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-dim);
+      background: var(--bg);
+      padding: 8px 10px;
+      border-radius: 4px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+
+    .evidence::before {
+      content: '"';
+      color: var(--accent);
+    }
+
+    .evidence::after {
+      content: '"';
+      color: var(--accent);
+    }
+
+    .gt-compare {
+      margin-top: 24px;
+    }
+
+    .gt-compare h3 {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+
+    .label-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .label-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 4px 0;
+    }
+
+    .mark {
+      width: 16px;
+      text-align: center;
+    }
+
+    .mark.tp {
+      color: #6FA875;
+    }
+
+    .mark.fp {
+      color: var(--danger);
+    }
+
+    .mark.fn {
+      color: var(--text-dim);
+    }
+
+    .drop-zone {
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 32px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .drop-zone.drag {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .empty {
+      color: var(--text-dim);
+      font-size: 13px;
+      font-family: var(--mono);
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    /* Risk severity badges */
+    .severity-badge {
+      font-family: var(--mono);
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 2px 8px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+
+    .severity-badge.high {
+      color: var(--severity-high);
+      background: var(--severity-high-bg);
+      border: 1px solid rgba(224, 82, 82, 0.3);
+    }
+
+    .severity-badge.medium {
+      color: var(--severity-med);
+      background: var(--severity-med-bg);
+      border: 1px solid rgba(224, 166, 82, 0.3);
+    }
+
+    .severity-badge.low {
+      color: var(--severity-low);
+      background: var(--severity-low-bg);
+      border: 1px solid rgba(111, 168, 117, 0.3);
+    }
+
+    .finding.severity-high { border-left-color: var(--severity-high); }
+    .finding.severity-medium { border-left-color: var(--severity-med); }
+    .finding.severity-low { border-left-color: var(--severity-low); }
+
+    /* Risk summary panel */
+    .risk-summary {
+      display: flex;
+      gap: 16px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .risk-card {
+      flex: 1;
+      min-width: 140px;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--bg-raised);
+    }
+
+    .risk-card .risk-count {
+      font-family: var(--mono);
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .risk-card.high .risk-count { color: var(--severity-high); }
+    .risk-card.medium .risk-count { color: var(--severity-med); }
+    .risk-card.low .risk-count { color: var(--severity-low); }
+
+    .risk-card .risk-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      margin-top: 4px;
+    }
+
+    .finding-tags {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: var(--mono);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <p class="eyebrow">RAG-based decision support · not legal advice</p>
+      <h1>Privacy Policy Audit</h1>
+      <p>Retrieves relevant sections of a mobile app privacy policy and identifies data-collection practices, with
+        evidence and — where available — comparison against annotated ground truth.</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="experiment">Indexed Policy (APP-350)</button>
+      <button class="tab" data-tab="upload">Upload Policy</button>
+    </div>
+
+    <div id="tab-experiment">
+      <div class="panel">
+        <div class="row">
+          <div>
+            <label for="policyId">Policy ID</label>
+            <input id="policyId" type="text" placeholder="e.g. 108" value="108">
+          </div>
+          <div>
+            <label for="configSelect">Chunking config</label>
+            <select id="configSelect">
+              <option value="fixed_300">fixed_300</option>
+              <option value="fixed_500">fixed_500</option>
+              <option value="semantic" selected>semantic</option>
+            </select>
+          </div>
+          <button id="runExperiment">Run audit</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-upload" style="display:none">
+      <div class="panel">
+        <div class="drop-zone" id="dropZone">
+          <input type="file" id="fileInput" accept=".html,.htm" style="display:none">
+          Drop a privacy-policy .html file here, or click to choose one.
+        </div>
+        <div class="row" style="margin-top:14px">
+          <button id="runUpload" disabled>Run audit</button>
+          <span id="fileName" style="font-family: var(--mono); font-size: 13px; color: var(--text-dim);"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div id="results"></div>
+
+    <footer>
+      Backend: FastAPI + ChromaDB + local LLM (Ollama). Findings are generated by a language model reading retrieved
+      policy excerpts and may be incomplete or incorrect — verify against the source policy before relying on any
+      result.
+    </footer>
+
+  </div>
+
+  <script>
+    const API_BASE = 'http://localhost:8000';
+
+    const tabs = document.querySelectorAll('.tab');
+    const tabExperiment = document.getElementById('tab-experiment');
+    const tabUpload = document.getElementById('tab-upload');
+    tabs.forEach(t => t.addEventListener('click', () => {
+      tabs.forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      const isExp = t.dataset.tab === 'experiment';
+      tabExperiment.style.display = isExp ? '' : 'none';
+      tabUpload.style.display = isExp ? 'none' : '';
+      document.getElementById('results').innerHTML = '';
+      document.getElementById('status').textContent = '';
+    }));
+
+    const statusEl = document.getElementById('status');
+    const resultsEl = document.getElementById('results');
+
+    function setStatus(msg, isError) {
+      statusEl.textContent = msg;
+      statusEl.className = 'status' + (isError ? ' error' : '');
+    }
+
+    function partyOf(practice) {
+      if (practice.toLowerCase().includes('3rdparty')) return '3RD PARTY';
+      if (practice.toLowerCase().includes('1stparty')) return '1ST PARTY';
+      return '';
+    }
+
+    // APP-350 practice → severity mapping
+    const SEVERITY_MAP = {
+      // HIGH — sensitive identifiers and precise location
+      'location_gps': 'high', 'location_cell_tower': 'high', 'location_bluetooth': 'high',
+      'location_wifi': 'high', 'location': 'high',
+      'identifier_imei': 'high', 'identifier_mac': 'high', 'identifier_sim': 'high',
+      // MEDIUM — moderate-sensitivity data
+      'contact_e_mail': 'medium', 'contact_email': 'medium', 'contact_phone': 'medium',
+      'contact_postal': 'medium', 'contact_address': 'medium', 'contact_password': 'medium',
+      'contact_zip': 'medium', 'contact_city': 'medium',
+      'identifier_cookie': 'medium', 'identifier_device': 'medium', 'identifier_ad': 'medium',
+      'identifier_ip': 'medium', 'location_ip': 'medium',
+      'third_party': 'medium', '3rdparty': 'medium',
+      // LOW — lower-sensitivity data
+      'demographic': 'medium', 'sso': 'low', 'facebook_sso': 'low',
+      'contact_1stparty': 'low', 'contact_3rdparty': 'low',
+      'identifier_1stparty': 'low', 'identifier_3rdparty': 'low',
+    };
+
+    function severityOf(practice) {
+      const p = (practice || '').toLowerCase().replace(/[\s\-]+/g, '_');
+      for (const [key, sev] of Object.entries(SEVERITY_MAP)) {
+        if (p.includes(key)) return sev;
+      }
+      return 'low';
+    }
+
+    function renderRiskSummary(practices) {
+      const performed = practices.filter(p => p.modality !== 'NOT_PERFORMED');
+      const counts = { high: 0, medium: 0, low: 0 };
+      performed.forEach(p => { counts[severityOf(p.practice)]++; });
+      return `
+    <div class="risk-summary">
+      <div class="risk-card high">
+        <div class="risk-count">${counts.high}</div>
+        <div class="risk-label">High Risk</div>
+      </div>
+      <div class="risk-card medium">
+        <div class="risk-count">${counts.medium}</div>
+        <div class="risk-label">Medium Risk</div>
+      </div>
+      <div class="risk-card low">
+        <div class="risk-count">${counts.low}</div>
+        <div class="risk-label">Low Risk</div>
+      </div>
+    </div>`;
+    }
+
+    function renderFindings(predicted) {
+      const practices = (predicted && predicted.practices) || [];
+      if (practices.length === 0) {
+        return '<div class="empty">No practices identified from the retrieved evidence.</div>';
+      }
+      const riskSummary = renderRiskSummary(practices);
+      const findings = practices.map(p => {
+        const sev = severityOf(p.practice);
+        return `
+    <div class="finding severity-${sev} ${p.modality === 'NOT_PERFORMED' ? 'not-performed' : ''}">
+      <div class="finding-head">
+        <span class="practice-name">${escapeHtml(p.practice || 'unknown')}</span>
+        <span class="finding-tags">
+          <span class="severity-badge ${sev}">${sev}</span>
+          <span class="party-tag">${partyOf(p.practice || '')}</span>
+        </span>
+      </div>
+      <p class="explanation">${escapeHtml(p.explanation || '')}</p>
+      <div class="evidence">${escapeHtml(p.evidence || '')}</div>
+    </div>`;
+      }).join('');
+      return riskSummary + findings;
+    }
+
+    function renderMetrics(metrics) {
+      if (!metrics) return '';
+      return `
+    <div class="metrics">
+      <div class="metric"><div class="num">${(metrics.precision * 100).toFixed(0)}%</div><div class="label">Precision</div></div>
+      <div class="metric"><div class="num">${(metrics.recall * 100).toFixed(0)}%</div><div class="label">Recall</div></div>
+      <div class="metric"><div class="num">${(metrics.f1 * 100).toFixed(0)}%</div><div class="label">F1</div></div>
+    </div>
+    <div class="gt-compare">
+      <h3>Label comparison</h3>
+      <div class="label-grid">
+        ${metrics.true_positives.map(l => `<div class="label-row"><span class="mark tp">✓</span>${escapeHtml(l)} <span style="color:var(--text-dim)">— matched</span></div>`).join('')}
+        ${metrics.false_positives.map(l => `<div class="label-row"><span class="mark fp">✗</span>${escapeHtml(l)} <span style="color:var(--text-dim)">— predicted, not in ground truth</span></div>`).join('')}
+        ${metrics.false_negatives.map(l => `<div class="label-row"><span class="mark fn">·</span>${escapeHtml(l)} <span style="color:var(--text-dim)">— in ground truth, missed</span></div>`).join('')}
+      </div>
+    </div>
+  `;
+    }
+
+    function escapeHtml(s) {
+      const d = document.createElement('div');
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    document.getElementById('runExperiment').addEventListener('click', async () => {
+      const policyId = document.getElementById('policyId').value.trim();
+      const config = document.getElementById('configSelect').value;
+      if (!policyId) { setStatus('Enter a policy ID.', true); return; }
+
+      const btn = document.getElementById('runExperiment');
+      btn.disabled = true;
+      resultsEl.innerHTML = '';
+      setStatus(`Retrieving evidence and running ${config} audit on policy ${policyId} — this calls a local LLM and can take 20-60s...`);
+
+      try {
+        const res = await fetch(`${API_BASE}/experiment/${encodeURIComponent(policyId)}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ config_name: config, top_k: 8, similarity_threshold: 0.1 })
+        });
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.detail || `Request failed (${res.status})`);
+        }
+        const data = await res.json();
+        setStatus(`Done. ${data.evidence_used.length} evidence chunks retrieved.`);
+        resultsEl.innerHTML = renderMetrics(data.metrics) + '<h3 style="font-family:var(--mono);font-size:13px;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.06em;margin:24px 0 10px">Risk Assessment</h3>' + renderFindings(data.predicted);
+      } catch (e) {
+        setStatus('Error: ' + e.message + ' (is the FastAPI backend running at ' + API_BASE + '?)', true);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const runUploadBtn = document.getElementById('runUpload');
+    const fileNameEl = document.getElementById('fileName');
+    let selectedFile = null;
+
+    dropZone.addEventListener('click', () => fileInput.click());
+    dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag'); });
+    dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag'));
+    dropZone.addEventListener('drop', e => {
+      e.preventDefault();
+      dropZone.classList.remove('drag');
+      if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+    });
+    fileInput.addEventListener('change', () => { if (fileInput.files.length) handleFile(fileInput.files[0]); });
+
+    function handleFile(file) {
+      selectedFile = file;
+      fileNameEl.textContent = file.name;
+      runUploadBtn.disabled = false;
+    }
+
+    runUploadBtn.addEventListener('click', async () => {
+      if (!selectedFile) return;
+      runUploadBtn.disabled = true;
+      resultsEl.innerHTML = '';
+      setStatus('Cleaning, chunking, embedding and auditing the uploaded policy — this can take 30-90s...');
+
+      try {
+        const formData = new FormData();
+        formData.append('file', selectedFile);
+        const res = await fetch(`${API_BASE}/audit`, { method: 'POST', body: formData });
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.detail || `Request failed (${res.status})`);
+        }
+        const data = await res.json();
+        setStatus(`Done. ${data.evidence_used.length} evidence chunks retrieved. No ground truth available for uploaded documents.`);
+        resultsEl.innerHTML = renderFindings(data.predicted);
+      } catch (e) {
+        setStatus('Error: ' + e.message + ' (is the FastAPI backend running at ' + API_BASE + '?)', true);
+      } finally {
+        runUploadBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+
+</html>

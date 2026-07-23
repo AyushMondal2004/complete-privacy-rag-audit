@@ -1,0 +1,8 @@
+config_name: semantic
+strategy: semantic
+similarity_threshold_chunking: 0.55
+min_chunk_words: 40
+max_chunk_words: 250
+top_k: 8
+similarity_threshold: 0.1
+

@@ -1,0 +1,6 @@
+config_name: fixed_500
+strategy: fixed
+chunk_size_words: 500
+overlap_words: 75
+top_k: 8
+similarity_threshold: 0.1

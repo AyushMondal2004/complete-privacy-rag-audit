@@ -1,0 +1,8 @@
+policy_id,error
+104,Expecting ':' delimiter: line 46 column 3 (char 2345)
+108,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+116,"Expecting ',' delimiter: line 27 column 46 (char 723)"
+309,"Expecting ',' delimiter: line 70 column 76 (char 2533)"
+314,Expecting ':' delimiter: line 41 column 18 (char 2003)
+33,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+51,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"

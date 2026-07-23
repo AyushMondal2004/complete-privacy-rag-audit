@@ -1,0 +1,14 @@
+policy_id,error
+137,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+139,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+145,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+202,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+204,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+220,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+242,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+256,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+336,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)"
+40,Expecting property name enclosed in double quotes: line 36 column 310 (char 3243)
+57,Extra data: line 74 column 1 (char 7220)
+62,Extra data: line 5 column 6 (char 234)
+75,Expecting ':' delimiter: line 19 column 722 (char 2106)
