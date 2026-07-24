@@ -1,0 +1,1258 @@
+[
+  {
+    "policy_id": "8",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Identifier_MAC_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"we collect information regarding your device type, operating system and version, carrier provider, IP address, Media Access Control (MAC) address\"",
+          "explanation": "The app collects the MAC address to track user activity."
+        },
+        {
+          "practice": "Identifier_IMEI_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"we collect information regarding your device type, operating system and version, carrier provider, IP address, Media Access Control (MAC) address, International Equipment Mobile ID (IMEI)\"",
+          "explanation": "The app collects the IMEI to track user activity."
+        },
+        {
+          "practice": "Location_GPS_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"we also collect information about your play and interaction with other users and the Service\"",
+          "explanation": "The app collects location data, which is implied to include GPS."
+        },
+        {
+          "practice": "Contact_E_Mail_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"If you have any questions about this Privacy Policy, please contact us at contact@candy-mobile.com\"",
+          "explanation": "The app collects email addresses for customer support purposes."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "150",
+    "predicted": {
+      "device_information": {
+        "automatically_collected": [
+          "device_type",
+          "model",
+          "mobile_device_id",
+          "language_preferences",
+          "time_zone",
+          "operating_system",
+          "mobile_carrier",
+          "internet_service_provider",
+          "network_connection_type",
+          "mobile_browsers_installed",
+          "hardware_information",
+          "running_and_installed_apps",
+          "approximate_location",
+          "ip_address",
+          "gcm_registration_id",
+          "unique_device_identifiers"
+        ],
+        "explicitly_agreed": [
+          "android_advertising_id"
+        ]
+      },
+      "app_information": {
+        "collected": [
+          "app_history_and_usage",
+          "downloads_and_installations_of_mobile_applications",
+          "in-app_events",
+          "internet_domains_visited_in_start",
+          "duration_of_visits",
+          "actions_during_visits",
+          "browsing_history",
+          "browser_and_system_settings",
+          "dates_and_time_stamps",
+          "specific_details_of_use_of_start"
+        ]
+      },
+      "search_logs": {
+        "collected": [
+          "depersonalized_search_logs"
+        ]
+      }
+    }
+  },
+  {
+    "policy_id": "11",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Location_MCC_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"location information, the MCC (mobile country code)\"",
+          "explanation": "The app collects location information including mobile country code."
+        },
+        {
+          "practice": "Identifier_Android_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"device information, such as your hardware model, android ID, and operation system version\"",
+          "explanation": "The app collects device information including Android ID."
+        },
+        {
+          "practice": "Identifier_Device_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"device information, such as your hardware model, android ID, and operation system version\"",
+          "explanation": "The app collects device information including device ID."
+        },
+        {
+          "practice": "Identifier_Operating_System_Version_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"device information, such as your hardware model, android ID, and operation system version\"",
+          "explanation": "The app collects device information including operating system version."
+        },
+        {
+          "practice": "Log_Information_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"log information, the application events such as version, installed date and time, usages statistics, crashes event, and dump reports of our application\"",
+          "explanation": "The app collects log information including usage statistics."
+        },
+        {
+          "practice": "Usage_Statistics_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"log information, the application events such as version, installed date and time, usages statistics, crashes event, and dump reports of our application\"",
+          "explanation": "The app collects usage statistics."
+        },
+        {
+          "practice": "Crash_Reports_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"log information, the application events such as version, installed date and time, usages statistics, crashes event, and dump reports of our application\"",
+          "explanation": "The app collects crash reports."
+        },
+        {
+          "practice": "Keyword_Search_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"the keywords you type in our application to search\"",
+          "explanation": "The app collects the keywords typed by users for searches."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "225",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Contact_E_Mail_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "If you want to email something you see through Flipboard to a friend who isn\u2019t already a Flipboard account holder, we may keep their email address for the purpose of sending such email and improving our services.",
+          "explanation": "The app collects email addresses when users share content with friends."
+        },
+        {
+          "practice": "Identifier_Ad_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We may also share non-personally identifiable, non-aggregate information (for example, anonymized Advertising IDs) with companies that help us improve our products and services, including advertising (such as research companies and analytics providers). As with your personally identifiable information, we require that such companies observe the limitations in this privacy policy.",
+          "explanation": "The app collects and shares ad IDs for improving its services."
+        },
+        {
+          "practice": "Identifier_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We receive some other information automatically when you use Flipboard. This includes data about your device, software, operating system, operating system- provided device or user-specific advertising IDs for advertisement tracking (\u201cAdvertising IDs\u201d), your IP address and the date and time of each request you make to Flipboard.",
+          "explanation": "The app collects IP addresses as part of its automatic data collection."
+        },
+        {
+          "practice": "Location_GPS_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We receive some other information automatically when you use Flipboard. This includes data about your device, software, operating system, operating system- provided device or user-specific advertising IDs for advertisement tracking (\u201cAdvertising IDs\u201d), your IP address and the date and time of each request you make to Flipboard.",
+          "explanation": "The app collects GPS location as part of its automatic data collection."
+        },
+        {
+          "practice": "Location_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We receive some other information automatically when you use Flipboard. This includes data about your device, software, operating system, operating system- provided device or user-specific advertising IDs for advertisement tracking (\u201cAdvertising IDs\u201d), your IP address and the date and time of each request you make to Flipboard.",
+          "explanation": "The app collects IP addresses as part of its automatic data collection."
+        },
+        {
+          "practice": "Location_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We receive some other information automatically when you use Flipboard. This includes data about your device, software, operating system, operating system- provided device or user-specific advertising IDs for advertisement tracking (\u201cAdvertising IDs\u201d), your IP address and the date and time of each request you make to Flipboard.",
+          "explanation": "The app collects location as part of its automatic data collection."
+        },
+        {
+          "practice": "Identifier_Device_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We receive some other information automatically when you use Flipboard. This includes data about your device, software, operating system, operating system- provided device or user-specific advertising IDs for advertisement tracking (\u201cAdvertising IDs\u201d), your IP address and the date and time of each request you make to Flipboard.",
+          "explanation": "The app collects device IDs as part of its automatic data collection."
+        },
+        {
+          "practice": "Identifier_MAC_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We receive some other information automatically when you use Flipboard. This includes data about your device, software, operating system, operating system- provided device or user-specific advertising IDs for advertisement tracking (\u201cAdvertising IDs\u201d), your IP address and the date and time of each request you make to Flipboard.",
+          "explanation": "The app collects MAC addresses as part of its automatic data collection."
+        },
+        {
+          "practice": "Identifier_IMEI_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We receive some other information automatically when you use Flipboard. This includes data about your device, software, operating system, operating system- provided device or user-specific advertising IDs for advertisement tracking (\u201cAdvertising IDs\u201d), your IP address and the date and time of each request you make to Flipboard.",
+          "explanation": "The app collects IMEI numbers as part of its automatic data collection."
+        },
+        {
+          "practice": "Identifier_SIM_Serial_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We receive some other information automatically when you use Flipboard. This includes data about your device, software, operating system, operating system- provided device or user-specific advertising IDs for advertisement tracking (\u201cAdvertising IDs\u201d), your IP address and the date and time of each request you make to Flipboard.",
+          "explanation": "The app collects SIM serial numbers as part of its automatic data collection."
+        },
+        {
+          "practice": "Demographic_Age_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "If you connect your Flipboard account with a third-party service, we collect information through that service. This information varies depending on the service and your privacy settings there, but may include profile information (e.g., age, gender and location), your contacts on that service and content that you\u2019ve made publicly available there.",
+          "explanation": "The app collects demographic information such as age from connected third-party services."
+        },
+        {
+          "practice": "Demographic_Gender_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "If you connect your Flipboard account with a third-party service, we collect information through that service. This information varies depending on the service and your privacy settings there, but may include profile information (e.g., age, gender and location), your contacts on that service and content that you\u2019ve made publicly available there.",
+          "explanation": "The app collects demographic information such as gender from connected third-party services."
+        },
+        {
+          "practice": "Demographic_Location_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "If you connect your Flipboard account with a third-party service, we collect information through that service. This information varies depending on the service and your privacy settings there, but may include profile information (e.g., age, gender and location), your contacts on that service and content that you\u2019ve made publicly available there.",
+          "explanation": "The app collects demographic information such as location from connected third-party services."
+        }
+      ],
+      "modality": "PERFORMED"
+    }
+  },
+  {
+    "policy_id": "211",
+    "predicted": {
+      "common_elements": [
+        "provides_services",
+        "personal_information_collection",
+        "non_personal_information_collection",
+        "information_sharing",
+        "user_account_creation",
+        "data_retention",
+        "security_measures",
+        "contact_information"
+      ],
+      "differences": {
+        "collection_of_search_data": [
+          "The first document mentions the collection of search data, while the second does not.",
+          "The second document includes details about search engines like Yahoo and Trovi, which are not present in the first."
+        ],
+        "personal_information_sharing": [
+          "The first document states that personal information is shared with third parties for marketing purposes, while the second does not mention this."
+        ],
+        "data_retention_policy": [
+          "The first document mentions a data retention policy, while the second does not provide specific details about it."
+        ],
+        "user_account_creation_details": [
+          "The first document provides more detailed information on user account creation and synchronization services.",
+          "The second document has less detail on this topic."
+        ]
+      }
+    }
+  },
+  {
+    "policy_id": "201",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Contact_E_Mail_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"please contact us at 2bunnylabs@gmail.com\"",
+          "explanation": "The app provides an email address for contacting them."
+        },
+        {
+          "practice": "Identifier_Device_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"unique device identifiers, installed application name and package name\"",
+          "explanation": "The app collects unique device identifiers to understand user behavior."
+        },
+        {
+          "practice": "Location_IP_Address_3rdParty",
+          "modality": "NOT_PERFORMED",
+          "evidence": "\"we may collect and use non-personal information in the following circumstances\"",
+          "explanation": "The app does not explicitly state that it collects location IP addresses from third parties."
+        },
+        {
+          "practice": "Location_Cell_Tower_3rdParty",
+          "modality": "NOT_PERFORMED",
+          "evidence": "\"we may collect and use non-personal information in the following circumstances\"",
+          "explanation": "The app does not explicitly state that it collects location cell tower data from third parties."
+        },
+        {
+          "practice": "Location_WiFi_3rdParty",
+          "modality": "NOT_PERFORMED",
+          "evidence": "\"we may collect and use non-personal information in the following circumstances\"",
+          "explanation": "The app does not explicitly state that it collects location WiFi data from third parties."
+        },
+        {
+          "practice": "Location_Bluetooth_3rdParty",
+          "modality": "NOT_PERFORMED",
+          "evidence": "\"we may collect and use non-personal information in the following circumstances\"",
+          "explanation": "The app does not explicitly state that it collects location Bluetooth data from third parties."
+        },
+        {
+          "practice": "Identifier_Ad_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"unique device identifiers, installed application name and package name\"",
+          "explanation": "The app collects unique device identifiers to understand user behavior."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "163",
+    "predicted": {
+      "policy_type": "Privacy Policy",
+      "organization_name": "ZeroFour Games (L.L.C.)",
+      "contact_address": "Mazaya Centre, Level 1, 160 Sheikh Zayed Road, Dubai, United Arab Emirates",
+      "website_url": "https://zerofour.ae/legal/privacy-policy.php",
+      "consent_required": true,
+      "information_collected": [
+        {
+          "type": "Personal Information",
+          "examples": [
+            "full name",
+            "postal address",
+            "user name and password",
+            "phone number or e-mail address"
+          ]
+        },
+        {
+          "type": "Demographic and Usage Information",
+          "examples": [
+            "date regarding the start and end and the extent of your usage of the ZeroFour Sites",
+            "browser information",
+            "site preferences"
+          ]
+        },
+        {
+          "type": "Payment Information",
+          "examples": [
+            "payment card information"
+          ]
+        }
+      ],
+      "information_usage": [
+        "enable visitors to take advantage of site offerings",
+        "respond to visitor\u2019s requests for products, services, and information",
+        "manage games and Site functionality",
+        "serve appropriate material to visitors",
+        "customize content"
+      ],
+      "data_storage": {
+        "personal_information": false,
+        "demographic_and_usage_information": true
+      },
+      "third_party_disclosure": [
+        "parents of children under 13 may be contacted for consent",
+        "users can request to review or have deleted their personally identifiable information from records"
+      ],
+      "user_controls": {
+        "access_control": true,
+        "update_and_correct_data": true
+      },
+      "security_measures": [
+        "information is protected"
+      ],
+      "legal_governance": {
+        "governing_laws": [
+          "the laws of the Emirate of Dubai and the applicable federal laws of the United Arab Emirates"
+        ]
+      }
+    }
+  },
+  {
+    "policy_id": "146",
+    "predicted": {
+      "company_name": "PILCOM d.o.o.",
+      "privacy_policy_url": "https://www.bubadu.com/privacy-policy",
+      "contact_email": "support@bubadu.com",
+      "security_measures": [
+        "Information encryption",
+        "Password protection"
+      ],
+      "data_retention_eu": {
+        "personal_information": "As long as it is needed for the provision of services",
+        "traffic_information": "No longer needed for transmission or up to end of bill challenge period",
+        "location_information": "Necessary for value-added service provision",
+        "cookies_and_direct_marketing": "Necessary for these purposes or until user opts out"
+      },
+      "data_retention_us": {
+        "general": "For the period necessary to fulfill the purposes outlined in this Privacy Policy unless a longer retention period is required or permitted by applicable legislation"
+      },
+      "data_log_files_storing": "Raw data log files on servers for one month, then deleted",
+      "third_party_integration": [
+        "Third party social networks and platforms (Apple Game Center, Google Play Games and Game Center, Amazon GameCircle, Facebook)",
+        "Third party websites, products or services may contain links in the Apps"
+      ],
+      "in_app_purchases": {
+        "requirement": "Use of third party checkout options",
+        "password_security": "Authentication and security maintaining is subject to specific terms of app store and OS"
+      },
+      "non_personal_information": [
+        "Device information (browser type, screen resolution, device type, language, operating system version)",
+        "Technical information (network status, SDK version, browser cookies, API key, application version, vendor, Flash version, geo location, storage size, screen size, firmware, aggregated data log files from servers, session information, levels achieved, in-app purchases, advertisement response, ad performance, user's interaction with ads and interests)"
+      ],
+      "personal_information": [
+        "IP address",
+        "Advertising identifier (IDFAs - iOS, IDFVs, Advertising ID - Android)",
+        "Geo-location data (specific enough to identify a town and state)",
+        "Raw data log files on servers (IP address, date, time, requests, state etc.)",
+        "User activities in the App (data about Apps used, actions or movements within the Apps, date and time, response times, download errors, length of visits, interaction information such as scrolling, clicks, mouse-overs, tools used, user\u2019s interaction with the service and behavior on the service)",
+        "Player identifier string when using game center",
+        "Push tokens"
+      ],
+      "last_updated": "January 2017",
+      "changes_to_policy": [
+        "We may update this Privacy Policy to reflect changes in our Information processing practices.",
+        "You will be informed about material changes with local in-app notification."
+      ]
+    }
+  },
+  {
+    "policy_id": "97",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Contact_E_Mail_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "If you have provided your e-mail address to WordsMobile, we will use it to respond to customer support inquiries, and keep you informed of your in-game activity.",
+          "explanation": "The app uses the email address for communication purposes."
+        },
+        {
+          "practice": "Identifier_MAC_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "we collect information regarding your device type, operating system and version, carrier provider, IP address, Media Access Control (MAC) address, International Equipment Mobile ID (IMEI), whether you are using a point package, the game version, the device\u2019s geo-location, language settings, and unique device ID.",
+          "explanation": "The app collects MAC addresses as part of the information it gathers from users."
+        },
+        {
+          "practice": "Identifier_IMEI_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "we collect information regarding your device type, operating system and version, carrier provider, IP address, Media Access Control (MAC) address, International Equipment Mobile ID (IMEI), whether you are using a point package, the game version, the device\u2019s geo-location, language settings, and unique device ID.",
+          "explanation": "The app collects IMEI numbers as part of the information it gathers from users."
+        },
+        {
+          "practice": "Location_GPS_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "we collect information regarding your device type, operating system and version, carrier provider, IP address, Media Access Control (MAC) address, International Equipment Mobile ID (IMEI), whether you are using a point package, the game version, the device\u2019s geo-location, language settings, and unique device ID.",
+          "explanation": "The app collects GPS location data as part of the information it gathers from users."
+        },
+        {
+          "practice": "Identifier_Device_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "In addition, we create a unique user ID to track your use of our Service. This unique user ID is stored in connection with your Account profile information to enable us to move Your Information to a new device at your request.",
+          "explanation": "The app creates and uses a unique device identifier to track user activity."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "350",
+    "predicted": {
+      "company_name": "Zynga",
+      "data_sharing_practices": {
+        "third_party_applications": true,
+        "social_networks": true,
+        "affiliates": true,
+        "international_transfers": true
+      },
+      "data_retention_policy": {
+        "account_closure": false,
+        "user_activity": true
+      },
+      "security_measures": {
+        "encryption": true,
+        "password_protection": true,
+        "account_hacking_prevention": true
+      },
+      "privacy_policy_changes": true,
+      "contact_information": [
+        "privacy@zynga.com",
+        "Zynga's Support Page",
+        "support@risingtidegames.com",
+        "Natural Motion games inquiry link"
+      ],
+      "opt_out_options": {
+        "web": true,
+        "mobile": true
+      },
+      "do_not_track_policy": false,
+      "third_party_services": true,
+      "childrens_privacy_policy": {
+        "age_restriction": true,
+        "data_collection_from_children": false,
+        "persistent_identifiers": true
+      }
+    }
+  },
+  {
+    "policy_id": "139",
+    "predicted": {
+      "company_name": "Apple",
+      "last_updated_date": "September 12, 2016",
+      "privacy_policy_url": "https://www.apple.com/legal/privacy/en-ww/",
+      "contact_info": {
+        "email": "",
+        "phone_number": "1-800-MY-APPLE",
+        "physical_address": "Apple Inc. 1 Infinite Loop, Cupertino, California, USA, 95014"
+      },
+      "complaint_process": {
+        "internal_contact": true,
+        "external_regulator_referral": true
+      },
+      "data_collection_and_use": [
+        {
+          "type_of_data": "Personal information",
+          "examples": [
+            "name",
+            "mailing address",
+            "phone number",
+            "email address",
+            "contact preferences",
+            "credit card information"
+          ]
+        },
+        {
+          "type_of_data": "Location data",
+          "details": "Precise location data, including real-time geographic location of Apple computer or device"
+        }
+      ],
+      "data_sharing": [
+        {
+          "with_who": "Apple affiliates and third parties for specific purposes"
+        },
+        {
+          "purposes": [
+            "create, develop, operate, deliver, and improve products, services, content, and advertising",
+            "loss prevention and anti-fraud purposes"
+          ]
+        }
+      ],
+      "data_retention": {
+        "description": "Retain personal information for the period necessary to fulfill the purposes outlined in this Privacy Policy unless a longer retention period is required or permitted by law"
+      },
+      "compliance_and_updates": {
+        "local_laws": true,
+        "international_transfer": [
+          "APEC economies"
+        ],
+        "update_frequency": "From time to time",
+        "notice_of_changes": true
+      }
+    }
+  },
+  {
+    "policy_id": "56",
+    "predicted": {
+      "document_type": "Privacy Policy",
+      "company_name": "Instagram, Inc.",
+      "data_collection": {
+        "direct_provision": [
+          "username",
+          "password",
+          "email address",
+          "profile information (e.g., first and last name, picture, phone number)",
+          "User Content (e.g., photos, comments, and other materials)",
+          "communications between you and Instagram"
+        ],
+        "indirect_provision": [
+          "information from your device or our Service",
+          "log file information automatically reported by your browser"
+        ]
+      },
+      "data_storage": {
+        "location": [
+          "United States or any other country in which Instagram, its Affiliates or Service Providers maintain facilities"
+        ],
+        "retention_period": "commercially reasonable time for backup, archival, and/or audit purposes following termination or deactivation of your account"
+      },
+      "user_controls": {
+        "account_management": [
+          "Update your account at any time by logging in and changing your profile settings",
+          "Unsubscribe from email communications from us"
+        ],
+        "deletion_options": [
+          "Learn more about deleting your account"
+        ]
+      },
+      "data_sharing": {
+        "third_party_sharing": [
+          "We use third-party analytics tools to help us measure traffic and usage trends for the Service",
+          "We may ask advertisers or other partners to serve ads or services to your devices, which may use cookies or similar technologies placed by us or the third party"
+        ],
+        "international_transfers": [
+          "Information that we collect about you, including personal information, may be transferred to a country and jurisdiction that does not have the same data protection laws as your jurisdiction"
+        ]
+      },
+      "security_measures": {
+        "data_security": "We use commercially reasonable safeguards to help keep the information collected through the Service secure",
+        "user_responsibility": "You are responsible for maintaining the secrecy of your unique password and account information, and for controlling access to emails between you and Instagram"
+      },
+      "childrens_privacy": {
+        "age_limit": 13,
+        "policy_compliance": true
+      },
+      "third_party_links": {
+        "responsibility": "We are not responsible for the practices employed by any websites or services linked to or from our Service, including the information or content contained within them"
+      },
+      "contact_information": [
+        {
+          "type": "general inquiries",
+          "channel": "Help Center"
+        },
+        {
+          "type": "deceased user inquiries",
+          "method": "email"
+        }
+      ],
+      "policy_updates": {
+        "modification_frequency": "from time to time",
+        "user_acceptance": "Your continued use of Instagram or the Service after any modification to this Privacy Policy will constitute your acceptance of such modification"
+      }
+    }
+  },
+  {
+    "policy_id": "294",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Contact_E_Mail_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "Upon registration, you are required to provide a valid Account E-mail address.",
+          "explanation": "The app collects the user's email address during registration."
+        },
+        {
+          "practice": "Identifier_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We automatically retrieve and retain information about your device, computer and browser, including IP addresses, device type, operating system, cookies, browser type and information, pages visited, etc...",
+          "explanation": "The app collects the user's IP address as part of the automatic data retrieval process."
+        },
+        {
+          "practice": "Location_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We automatically retrieve and retain information about your device, computer and browser, including IP addresses, device type, operating system, cookies, browser type and information, pages visited, etc...",
+          "explanation": "The app collects the user's IP address as part of the automatic data retrieval process."
+        },
+        {
+          "practice": "Identifier_Device_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We automatically retrieve and retain information about your device, computer and browser, including IP addresses, device type, operating system, cookies, browser type and information, pages visited, etc...",
+          "explanation": "The app collects the user's device ID as part of the automatic data retrieval process."
+        },
+        {
+          "practice": "Identifier_Cookie_or_similar_Tech_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We automatically retrieve and retain information about your device, computer and browser, including IP addresses, device type, operating system, cookies, browser type and information, pages visited, etc...",
+          "explanation": "The app collects cookie data as part of the automatic data retrieval process."
+        },
+        {
+          "practice": "Location_Bluetooth_1stParty",
+          "modality": "NOT_PERFORMED",
+          "evidence": "",
+          "explanation": "There is no mention of Bluetooth location in the provided excerpts."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "113",
+    "predicted": {
+      "personal_data": [
+        {
+          "type": "name",
+          "source": "[3]"
+        },
+        {
+          "type": "email_address",
+          "source": "[3], [4]"
+        },
+        {
+          "type": "address",
+          "source": "[3]"
+        },
+        {
+          "type": "telephone_number",
+          "source": "[3]"
+        },
+        {
+          "type": "credit_card_information",
+          "source": "[3]"
+        },
+        {
+          "type": "user_and_account_names",
+          "source": "[3]"
+        },
+        {
+          "type": "phone_number",
+          "source": "[3]"
+        },
+        {
+          "type": "sim_card_number",
+          "source": "[3]"
+        },
+        {
+          "type": "device_id_numbers",
+          "source": "[3]"
+        },
+        {
+          "type": "geographic_location",
+          "subtypes": [
+            "gps",
+            "wi-fi",
+            "communications_network"
+          ],
+          "source": "[3]"
+        }
+      ],
+      "non_personal_data": [
+        {
+          "type": "internet_protocol_address",
+          "source": "[3], [5]"
+        },
+        {
+          "type": "user_and_account_names",
+          "source": "[3]"
+        },
+        {
+          "type": "phone_number",
+          "source": "[3]"
+        },
+        {
+          "type": "sim_card_number",
+          "source": "[3]"
+        },
+        {
+          "type": "device_id_numbers",
+          "source": "[3]"
+        }
+      ],
+      "data_sharing": [
+        {
+          "type": "affiliated_companies",
+          "source": "[4]"
+        },
+        {
+          "type": "search_providers",
+          "source": "[4]"
+        },
+        {
+          "type": "resellers_distributors_and_other_partners",
+          "source": "[4]"
+        },
+        {
+          "type": "legal_requirements",
+          "subtypes": [
+            "court_order",
+            "lawful_process"
+          ],
+          "source": "[4]"
+        },
+        {
+          "type": "protecting_rights_and_property",
+          "subtypes": [
+            "personal_safety",
+            "property",
+            "public_rights"
+          ],
+          "source": "[4]"
+        }
+      ],
+      "contact_information": [
+        {
+          "email": "privacy@avg.com",
+          "source": "[5], [6]"
+        },
+        {
+          "physical_address": "AVG Netherlands BV Gatwickstraat 9-39, 1043GL Amsterdam The Netherlands",
+          "source": "[5], [6]"
+        }
+      ]
+    }
+  },
+  {
+    "policy_id": "112",
+    "predicted": {
+      "company": "Avast",
+      "data_collection_methods": [
+        {
+          "method": "Online Registration",
+          "details": [
+            "Email address, password (optional demographic questions)"
+          ]
+        },
+        {
+          "method": "Facebook Registration and Sign-in",
+          "details": [
+            "First name, last name, email address, network(s)",
+            "No other user information is stored"
+          ],
+          "permissions": [
+            "Post on behalf of the user in certain cases (registration/installation, updates, protection from infected websites)"
+          ]
+        },
+        {
+          "method": "Product-Specific Data Collection",
+          "details": [
+            "Avast CommunityIQ: URLs of visited websites, nature of identified threats, information about potentially infected files and emails, additional statistical information",
+            "Avast FileRep: Executable files or their hashes (deidentified versions) for determining infectiousness",
+            "Avast Online Security: Opinion information provided by users, reputation ratings"
+          ]
+        },
+        {
+          "method": "SecureLine Virtual Private Network (VPN)",
+          "details": [
+            "Time and network location from which the VPN connection was made, duration of the connection, bandwidth transferred per session"
+          ],
+          "retention_policy": "Data is routinely deleted within 30 days"
+        },
+        {
+          "method": "Avast Passwords",
+          "details": [
+            "User passwords stored locally on devices encrypted by Avast Passwords application",
+            "Optional feature 'Synchronisation & Backup' stores passwords and notes securely encrypted on a remote server, which cannot be decrypted by the company"
+          ]
+        },
+        {
+          "method": "Avast Call Blocker for iOS",
+          "details": [
+            "Proprietary algorithm running on Avast's servers using crowdsourced data from AMS users, SPAM numbers reported through the app, publicly available sources",
+            "No access to incoming phone calls, phone numbers or contact lists"
+          ]
+        },
+        {
+          "method": "CleanUp Bootable Linux-Based Antivirus Program",
+          "details": [
+            "Name, surname, email address, password hash, originating IP address, display name and number of scanned systems",
+            "Scanned systems history including data about operating system, hostnames and usernames"
+          ]
+        }
+      ],
+      "data_retention_policies": {
+        "Avast CommunityIQ": "No specific retention policy mentioned",
+        "Avast FileRep": "No specific retention policy mentioned",
+        "Avast Online Security": "No specific retention policy mentioned",
+        "CleanUp": "Data is routinely deleted within 30 days"
+      }
+    }
+  },
+  {
+    "policy_id": "141",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Identifier_Ad_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "This information may be associated with your advertising Id (Google Advertising Id) for the purpose of providing you our services and improving them.",
+          "explanation": "The app collects and associates data with Google Advertising ID."
+        },
+        {
+          "practice": "Location_GPS_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We may collect your location based information for the purpose of providing you location-based services.",
+          "explanation": "The app collects GPS-based location data for its services."
+        },
+        {
+          "practice": "Identifier_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "This data is stored within Amazon Web Services.",
+          "explanation": "The app stores IP address information on AWS servers."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "2",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Identifier_Device_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Ad networks who provide adverts to our mobile applications may access your unique device identifier\"",
+          "explanation": "The app collects and uses a unique device identifier for ad personalization."
+        },
+        {
+          "practice": "Location_GPS_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Some apps may request a location permission. In this case, your location is also anonymous\"",
+          "explanation": "The app collects and uses location data for ad personalization."
+        },
+        {
+          "practice": "Identifier_Ad_ID_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Ad networks who provide adverts to our mobile applications may access your unique device identifier\"",
+          "explanation": "Third-party ad networks collect and use the app's unique device identifier for ad personalization."
+        },
+        {
+          "practice": "Identifier_IP_Address_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Google Analytics also automatically collects data including app sessions numbers, session lengths\"",
+          "explanation": "Third-party analytics services collect and use IP addresses for tracking user sessions."
+        },
+        {
+          "practice": "Location_IP_Address_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Google Analytics also automatically collects data including app sessions numbers, session lengths\"",
+          "explanation": "Third-party analytics services collect and use IP addresses for tracking user locations."
+        },
+        {
+          "practice": "Location_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Some apps may request a location permission. In this case, your location is also anonymous\"",
+          "explanation": "The app collects and uses location data for ad personalization."
+        },
+        {
+          "practice": "Location_WiFi_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Google Analytics also automatically collects data including app sessions numbers, session lengths\"",
+          "explanation": "Third-party analytics services collect and use WiFi information for tracking user locations."
+        },
+        {
+          "practice": "Location_Cell_Tower_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Google Analytics also automatically collects data including app sessions numbers, session lengths\"",
+          "explanation": "Third-party analytics services collect and use cell tower information for tracking user locations."
+        },
+        {
+          "practice": "Identifier_Cookie_or_similar_Tech_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"These analytics and ad networks may use data and cookies to help determine which ads to show you\"",
+          "explanation": "Third-party analytics services collect and use cookies for tracking user behavior."
+        },
+        {
+          "practice": "Identifier_MAC_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Ad networks who provide adverts to our mobile applications may access your unique device identifier\"",
+          "explanation": "Third-party ad networks collect and use MAC addresses for tracking user behavior."
+        },
+        {
+          "practice": "Identifier_IMEI_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Ad networks who provide adverts to our mobile applications may access your unique device identifier\"",
+          "explanation": "Third-party ad networks collect and use IMEI numbers for tracking user behavior."
+        },
+        {
+          "practice": "Identifier_SIM_Serial_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Ad networks who provide adverts to our mobile applications may access your unique device identifier\"",
+          "explanation": "Third-party ad networks collect and use SIM serial numbers for tracking user behavior."
+        },
+        {
+          "practice": "Identifier_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"AI Factory may collect and use anonymous data, via Google Analytics\"",
+          "explanation": "The app collects and uses device identifiers for analytics purposes."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "206",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Contact_E_Mail_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"including your name, address, and e-mail address\"",
+          "explanation": "The policy explicitly mentions collecting email addresses."
+        },
+        {
+          "practice": "Location_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"We collect information in two primary ways: You give it to us when you login with your Facebook credential; We collect it automatically when you visit our websites or use our products and services\"",
+          "explanation": "The policy states that IP addresses are collected automatically when users visit the website."
+        },
+        {
+          "practice": "Identifier_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"We collect information in two primary ways: You give it to us when you login with your Facebook credential; We collect it automatically when you visit our websites or use our products and services\"",
+          "explanation": "The policy states that IP addresses are collected automatically when users visit the website."
+        },
+        {
+          "practice": "Demographic_Age_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"We may collect different types of personal and other information based on your use of our products and services. Some examples include: Equipment, Performance, ContextLogic Websites Usage, Viewing and other Technical Information about your use of our network, services, products or websites\"",
+          "explanation": "The policy mentions collecting various types of information including demographic age."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "331",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Demographic_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"To personalize user experience. We may use your Non- Personal Information to understand demographics, customer interest, and other trends among our users\"",
+          "explanation": "The app uses non-personal information to understand demographic data."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "61",
+    "predicted": {
+      "document_type": "privacy_policy",
+      "company_name": "LinkedIn",
+      "last_updated": "October 23, 2014",
+      "key_changes": [
+        {
+          "change_date": "Not specified",
+          "description": "Updated the privacy policy"
+        }
+      ],
+      "data_collected": [
+        {
+          "type": "profile_information",
+          "details": "Job title, education, skills, professional experience, educational background, honors, awards, professional affiliations, Group memberships, networking objectives, companies or individuals followed, and other information including content."
+        },
+        {
+          "type": "address_book_and_contacts",
+          "details": "Email address book, mobile device contacts, calendar"
+        }
+      ],
+      "data_sharing": [
+        {
+          "condition": "with your consent",
+          "description": "Sharing of personal information with third parties"
+        },
+        {
+          "condition": "as required by law, subpoena or other legal process",
+          "description": "Sharing of personal information when legally mandated"
+        }
+      ],
+      "user_communications": [
+        {
+          "type": "messages",
+          "details": "Welcome and engagement communications, service communications, promotional communications (email and InMail messages)"
+        },
+        {
+          "type": "promotional_messages",
+          "details": "Promotional information from partners including job opportunities"
+        }
+      ],
+      "user_choices_and_obligations": [
+        {
+          "description": "Users can withdraw or modify their consent to the collection and processing of personal information at any time."
+        },
+        {
+          "description": "Users can change email and contact preferences, opt out of promotional messages, and close accounts."
+        }
+      ],
+      "security_measures": [
+        {
+          "description": "Industry-standard safeguards are implemented to protect user information."
+        }
+      ]
+    }
+  },
+  {
+    "policy_id": "110",
+    "predicted": {
+      "company_name": "ASUSTeK COMPUTER INC.",
+      "privacy_policy_url": "/Privacy-Policy",
+      "last_updated_date": "March 23, 2016",
+      "contact_info": {
+        "email": "privacy@asus.com",
+        "address": "ASUSTeK COMPUTER INC. Legal Compliance Department Legal Affairs Center 15, Li-Te Rd., Taipei 112, Taiwan"
+      },
+      "product_categories": [
+        "Phones",
+        "Notebook & 2-in-1 PCs",
+        "Tablets",
+        "Motherboards",
+        "Graphics Cards",
+        "Wearable & Healthcare",
+        "Desktop & All-in-One PCs",
+        "Display",
+        "Networking",
+        "Sound",
+        "Home & Automotive"
+      ],
+      "terms_of_use_url": "/Terms-of-Use-Notice",
+      "additional_services": [
+        "ZenWatch",
+        "ZenFone",
+        "ZenBook",
+        "VivoBook",
+        "Chromebook",
+        "ASUSPRO",
+        "ROG",
+        "TUF"
+      ],
+      "service_support_links": {
+        "zenTalk": true,
+        "zenCircle": true,
+        "zenUI": true,
+        "zenFoneCare": true
+      },
+      "privacy_policy_sections": [
+        "Who We Are",
+        "Awards",
+        "News",
+        "About ASUS",
+        "Investor Relations",
+        "CSR for global Press Room"
+      ],
+      "legal_compliance_department": {
+        "name": "Legal Compliance Department",
+        "department": "Legal Affairs Center",
+        "address": "15, Li-Te Rd., Taipei 112, Taiwan"
+      }
+    }
+  },
+  {
+    "policy_id": "42",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Contact_E_Mail_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "d zkdes@gmail.com This document was last updated on November 27, 2013",
+          "explanation": "The email address is provided for contact purposes."
+        },
+        {
+          "practice": "Identifier_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Services, such as the operating system and the Internet service providers utilized and other similar information.",
+          "explanation": "The app collects IP address as part of non-personal identification information."
+        },
+        {
+          "practice": "Location_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Services, such as the operating system and the Internet service providers utilized and other similar information.",
+          "explanation": "The app collects IP address as part of location-based non-personal identification information."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "190",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Contact_E_Mail_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "contact@playrix.com .",
+          "explanation": "The privacy policy provides an email address for contacting the company regarding privacy concerns."
+        },
+        {
+          "practice": "Identifier_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We may use your Personal Information to contact you as needed, including but not limited to by sending you notifications. If you do not want to receive further notifications from us, you can always disable this option.",
+          "explanation": "The policy mentions using IP addresses for contacting users."
+        },
+        {
+          "practice": "Location_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "We may use your Personal Information to contact you as needed, including but not limited to by sending you notifications. If you do not want to receive further notifications from us, you can always disable this option.",
+          "explanation": "The policy mentions using IP addresses for contacting users."
+        },
+        {
+          "practice": "Identifier_Device_ID_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "Our games may contain third-party tracking tools from our service providers, for example, Google Analytics. Such third parties may use SDKs, APIs, and cookies in our games to enable them to collect and analyze user information on our behalf.",
+          "explanation": "The policy states that third parties can access device identifiers through the use of tracking tools."
+        },
+        {
+          "practice": "Identifier_MAC_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "Our games may contain third-party tracking tools from our service providers, for example, Google Analytics. Such third parties may use SDKs, APIs, and cookies in our games to enable them to collect and analyze user information on our behalf.",
+          "explanation": "The policy mentions that third parties can access MAC addresses through the use of tracking tools."
+        },
+        {
+          "practice": "Identifier_IMEI_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "Our games may contain third-party tracking tools from our service providers, for example, Google Analytics. Such third parties may use SDKs, APIs, and cookies in our games to enable them to collect and analyze user information on our behalf.",
+          "explanation": "The policy states that third parties can access IMEI numbers through the use of tracking tools."
+        },
+        {
+          "practice": "Identifier_Cookie_or_similar_Tech_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "Our website may use cookies to store information about your visits. While cookies contain no personal information, they help us identify you as a unique user and/or your browser session.",
+          "explanation": "The policy mentions using cookies for identifying users."
+        },
+        {
+          "practice": "SSO_3rdParty",
+          "modality": "PERFORMED",
+          "evidence": "When you use or connect to a Playrix\u2019s website or download Playrix\u2019s software via a third party platform \u2014 including Facebook \u2014 you allow us to access and/or collect certain information from your third-party platform profile/account.",
+          "explanation": "The policy states that the app allows access to user information from third-party platforms like Facebook."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "84",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Demographic_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"To personalize user experience. We may use your Non- Personal Information to understand demographics, customer interest, and other trends among our users\"",
+          "explanation": "The app uses non-personal information to understand demographic data."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  },
+  {
+    "policy_id": "292",
+    "predicted": {
+      "practices": [
+        {
+          "practice": "Contact_Address_Book_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"With your permission (on download or in the app), we may access and store your device's contact list to find your friends on the PicsArt Service, to invite them, or to share your Content with them\"",
+          "explanation": "The app accesses and stores the user's device contact list."
+        },
+        {
+          "practice": "Location_GPS_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"We may also collect information about others if you use the PicsArt Service to upload, share and/or distribute Content that contains information about them, including their name, image and online contact information. If you geotag your photo or tag your photo using others' APIs then your latitude and longitude will be stored with the photo\"",
+          "explanation": "The app collects location data (latitude and longitude) when users geotag photos."
+        },
+        {
+          "practice": "Identifier_Device_ID_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Cookies - We automatically collect certain information through the use of 'cookies'. Cookies are small data files that are stored on your hard drive by a Web site. Among other things, the use of cookies helps us to improve the Site and your experience on the Site\"",
+          "explanation": "The app uses device identifiers (cookies) to track user activity."
+        },
+        {
+          "practice": "Identifier_IP_Address_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"For example, it is standard for your Web browser to automatically send information to every Web site you visit, including ours. Such information includes your computer's Internet Protocol ('IP') address\"",
+          "explanation": "The app collects IP addresses as part of user activity data."
+        },
+        {
+          "practice": "Identifier_Cookie_or_similar_Tech_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"Cookies - We automatically collect certain information through the use of 'cookies'. Cookies are small data files that are stored on your hard drive by a Web site\"",
+          "explanation": "The app uses cookies to track user activity."
+        },
+        {
+          "practice": "SSO_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"When you link your account with Facebook, we might have access to your name\"",
+          "explanation": "The app supports Single Sign-On (SSO) through Facebook."
+        },
+        {
+          "practice": "Facebook_SSO_1stParty",
+          "modality": "PERFORMED",
+          "evidence": "\"When you link your account with Facebook, we might have access to your name\"",
+          "explanation": "The app supports Single Sign-On (SSO) through Facebook."
+        }
+      ],
+      "insufficient_evidence": false
+    }
+  }
+]

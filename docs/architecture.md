@@ -8,6 +8,32 @@ This file reflects the pipeline as it actually ran for the full
 349-policy experiments. See `docs/limitations.md` for issues found
 during development and what remains unresolved.
 
+## Structural chunking: built, not included in the reported comparison
+
+`src/chunking/structural_chunker.py` implements heading-aware section
+splitting (using the `## <heading>` markers `html_cleaner.py` inserts).
+It is fully functional and was piloted early in development, but is
+**not** one of the three configs in the reported 349-policy comparison
+(`experiments/configs/` only defines `fixed_300`, `fixed_500`, and
+`semantic`).
+
+This was a scope decision, not an oversight: the project's core
+research questions (RQ2, RQ3) specifically compare fixed-size vs
+semantic-boundary chunking, and adding a third structural variant
+midway through the experimental runs would have meant either
+re-running all three existing configs with a fourth added, or reporting
+an unbalanced comparison. `structural_chunker.py` is retained in the
+codebase as a documented candidate for **future work** — a natural next
+step would be a four-way comparison (fixed / structural / semantic /
+hybrid) once time allows, since heading-aware splitting could plausibly
+combine some of semantic chunking's context-coherence with lower
+compute cost (no per-sentence embedding needed at chunk-build time,
+unlike `semantic_chunker.py`).
+
+State this explicitly as a limitation/future-work item in your
+dissertation (RQ5 / Chapter 5) rather than letting the file's presence
+in the repo go unexplained.
+
 ## Component map
 
 | Layer | Module | Responsibility |
