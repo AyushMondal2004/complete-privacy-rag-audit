@@ -5,4 +5,3 @@ min_chunk_words: 40
 max_chunk_words: 250
 top_k: 8
 similarity_threshold: 0.1
-

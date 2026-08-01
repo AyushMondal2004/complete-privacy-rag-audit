@@ -1,14 +1,5 @@
-"""
-Fixed-size chunking baseline. Splits on whitespace-delimited words with a
-configurable overlap so a sentence at a boundary isn't cleanly severed.
-
-This is deliberately simple — it is the baseline your dissertation compares
-the structural/semantic approach against (LD7236 section 3.5).
-"""
 from __future__ import annotations
 from .base import Chunk
-
-
 def chunk_fixed(
     policy_id: str,
     text: str,
@@ -19,7 +10,6 @@ def chunk_fixed(
     words = text.split()
     chunks: list[Chunk] = []
     step = max(chunk_size_words - overlap_words, 1)
-
     position = 0
     for i in range(0, len(words), step):
         window = words[i : i + chunk_size_words]
@@ -39,5 +29,4 @@ def chunk_fixed(
         position += 1
         if i + chunk_size_words >= len(words):
             break
-
     return chunks
